@@ -15,10 +15,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="no-scroll-body">
-        <div>
-          {children}
+        <div className="paper-frame">
+          <div className="inner-frame">
+            {children}
+          </div>
         </div>
-        
       </body>
     </html>
   );
