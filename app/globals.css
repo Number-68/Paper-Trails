@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #e0d1d1;
 }
 
 @theme inline {
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #c21818;
     --foreground: #ededed;
   }
 }
@@ -37,15 +37,36 @@ body {
   height: 100%;
   overflow: hidden;
   box-sizing: border-box;
-  background: #ae9f9f;
+  background: #E1D5B4;
   padding: 5% 2% 1% 2%;
+  position:relative;
+
 }
+
+.paper-frame::after {
+  content: "";
+  position: absolute;
+
+  /* Instead of matching padding, match the actual inner-frame box */
+  top: calc(5%);   
+  left: calc(2%);
+  right: calc(2%);
+  bottom: calc(1%);
+
+  border-radius: 40px;
+  pointer-events: none;
+
+  box-shadow:
+    inset 0 0 25px rgba(0,0,0,0.25),
+    inset 0 4px 8px rgba(0,0,0,0.15);
+}
+  
 
 .inner-frame {
   border-radius: 40px;
+
   height: 100%;
-  background: black;
-  padding: 5%;
+  background: #E4D4A8;
   overflow-y: auto;
   
 
