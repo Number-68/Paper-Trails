@@ -18,6 +18,9 @@ export default function RootLayout({
         <div className="paper-frame">
           <div className="inner-frame">
             {children}
+            {children}
+            {children}
+            
           </div>
         </div>
       </body>

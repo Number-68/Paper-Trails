@@ -44,6 +44,9 @@ body {
 .inner-frame {
   border-radius: 40px;
   height: 100%;
+  background: black;
+
+  padding: 5%;
 
   overflow-y: auto;
 }
