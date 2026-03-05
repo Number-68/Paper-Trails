@@ -26,8 +26,9 @@ body {
 }
 
 
-.no-scroll {
-
+.no-scroll-body {
+  height: 100vh;
+  overflow: hidden;
 }
 
 

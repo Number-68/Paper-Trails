@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="no-scroll">
+      <body className="no-scroll-body">
         <div>
           {children}
         </div>
