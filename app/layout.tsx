@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import PullNav from "./components/navigation/pullNav"
 
 export const metadata: Metadata = {
   title: "Ahleeryan-Joe Ventura",
@@ -16,11 +17,10 @@ export default function RootLayout({
     <html lang="en">
       <body className="no-scroll-body">
         <div className="paper-frame">
+
+          <PullNav />
+
           <div className="inner-frame">
-            {children}
-           
-            {children}
-            {children}
             {children}
           </div>
         </div>
