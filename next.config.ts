@@ -6,12 +6,6 @@ const nextConfig: NextConfig = {
 };
 
 
-/* Removes fast refresh */
-module.exports = {
-  reactStrictMode: true,
-  experimental: {
-    reactRefresh: false,
-  },
-};
+
 
 export default nextConfig;
