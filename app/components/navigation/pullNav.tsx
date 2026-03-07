@@ -3,9 +3,11 @@ import PullTab from "./pullTab";
 export default function pullNav() {
 
     return (
-        <div>
-            <PullTab />
-        </div>
+        <nav>
+            <PullTab label="Home" route="/" />
+            <PullTab label="Test" route="/testDirection" />
+            
+        </nav>
         
     )
 
