@@ -57,7 +57,7 @@ export default function PullTab ( {label, route, threshold = 400, color}: PullTa
                 transform: y.to((v) => `translateY(${v}px)`),
                 touchAction: "none",
                 width: 120,
-                height: 40,
+                height: 60,
                 borderRadius: "0 0 12px 12px",
                 display: "flex",
                 alignItems: "center",

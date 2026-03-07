@@ -149,7 +149,6 @@ p {
   border-radius: 20px;
 }
 
-/* todo: the colors are a bit too gradient. is it possible to do toon shading? cell shading? */
 
 .tab-design{
   background-image:
@@ -176,6 +175,8 @@ p {
   /*outline: 2px solid #000; */
   border-radius: 0 0 12px 12px;
   font-family: "Caveat Brush";
+  font-size: 2em;
+
 }
 
 .quick-about-me-main {
