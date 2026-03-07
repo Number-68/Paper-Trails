@@ -19,12 +19,12 @@ export default function PullTab ( {label, route, threshold = 120}: PullTabProps)
     const [{ y }, api] = useSpring(() => ({ y: 0}));
 
     
-  // Drag gesture logic
+  //drag gesture logic
   const bind = useDrag(({ down, movement: [, my] }) => {
     const pull = Math.max(0, my); // prevent upward drag
 
     if (down) {
-      // Follow the finger exactly while dragging
+      //dollow the cursorexactly while dragging
       api.start({ y: pull, immediate: true });
       return;
     }
@@ -36,6 +36,7 @@ export default function PullTab ( {label, route, threshold = 120}: PullTabProps)
       return;
     }
 
+    // todo: add some sort of loading screen? or something to show that loading is being done. looks flat right now.
     // Snap back if not enough pull
     api.start({ y: 0 });
   });

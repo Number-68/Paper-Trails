@@ -14,6 +14,36 @@
   }
 }
 
+/* font test classes */
+.font-tomorrow {
+  font-family: "Tomorrow", sans-serif;
+}
+
+.font-covered {
+  font-family: "Covered By Your Grace", cursive;
+}
+
+.font-nixie {
+  font-family: "Nixie One", serif;
+}
+
+.font-silkscreen {
+  font-family: "Silkscreen", sans-serif;
+}
+
+.font-caveat {
+  font-family: "Caveat", cursive;
+}
+
+.font-caveat-brush {
+  font-family: "Caveat Brush", cursive;
+}
+
+
+
+
+
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -32,7 +62,7 @@ body {
   height: 100%;
   overflow: hidden;
   box-sizing: border-box;
-  background: #E1D5B4;
+  background: #ECDBC4;
   padding: 3% 2% 1% 2%;
 
 }
