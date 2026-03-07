@@ -9,6 +9,7 @@ type PullTabProps = {
     label: string;
     route: string;
     threshold?: number;
+    color: string;
 };
 
 // todo: threshold is currently fixed. I want to make it dynamic to at least like... 30% of the page for different resolution sizes.
@@ -16,7 +17,7 @@ type PullTabProps = {
 // but then again, find other possibilities. ez pz
 
 
-export default function PullTab ( {label, route, threshold = 400}: PullTabProps) {
+export default function PullTab ( {label, route, threshold = 400, color}: PullTabProps) {
     const router = useRouter();
 
     //spring value for vertical movement
@@ -42,15 +43,17 @@ export default function PullTab ( {label, route, threshold = 400}: PullTabProps)
 
     // todo: add some sort of loading screen? or something to show that loading is being done. looks flat right now.
     // Snap back if not enough pull
+    // how it sohuld work? 
+    // cover entire screen > wait for complete loading > animation pull back up.
     api.start({ y: 0 });
   });
 
     return (
-        
         <animated.div 
-            className="tab-design"
+            className="tab-design paper-outline"
             {...bind()}
             style={{
+                
                 transform: y.to((v) => `translateY(${v}px)`),
                 touchAction: "none",
                 width: 120,
@@ -60,7 +63,6 @@ export default function PullTab ( {label, route, threshold = 400}: PullTabProps)
                 alignItems: "center",
                 justifyContent: "center",
                 cursor: "grab",
-                boxShadow: "0 4px 8px rgba(0,0,0,0.15)",
                 userSelect: "none",
             }}
         >
@@ -70,5 +72,7 @@ export default function PullTab ( {label, route, threshold = 400}: PullTabProps)
           </div>
         
         </animated.div>
+      
+      
     )
 }

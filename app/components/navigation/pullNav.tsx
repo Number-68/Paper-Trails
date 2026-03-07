@@ -9,8 +9,8 @@ export default function pullNav() {
     // to a theatre...
     return (
         <nav className="paper-nav">
-            <PullTab label="Home" route="/" />
-            <PullTab label="Test" route="/testDirection" />
+            <PullTab label="Home" route="/" color="#c7ae8e"/>
+            <PullTab label="Test" route="/testDirection" color="#c7ae8e"/>
             
         </nav>
         
