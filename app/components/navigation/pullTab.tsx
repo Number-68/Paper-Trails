@@ -11,8 +11,12 @@ type PullTabProps = {
     threshold?: number;
 };
 
+// todo: threshold is currently fixed. I want to make it dynamic to at least like... 30% of the page for different resolution sizes.
+// also, for mobile, I want to make this switch from verical tabs to just... a pullout menu since i feel it wouldn't function properly with how mobile works? 
+// but then again, find other possibilities. ez pz
 
-export default function PullTab ( {label, route, threshold = 120}: PullTabProps) {
+
+export default function PullTab ( {label, route, threshold = 400}: PullTabProps) {
     const router = useRouter();
 
     //spring value for vertical movement
@@ -43,7 +47,8 @@ export default function PullTab ( {label, route, threshold = 120}: PullTabProps)
 
     return (
         
-        <animated.div
+        <animated.div 
+            className="paper-outline"
             {...bind()}
             style={{
                 transform: y.to((v) => `translateY(${v}px)`),
