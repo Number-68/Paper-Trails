@@ -64,7 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={tomorrow.className}>
       <body className="no-scroll-body">
         <div className="paper-frame">
 

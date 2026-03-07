@@ -5,6 +5,8 @@ export default function TestDirection() {
         <p>routing works!</p>
 
         <br />
+
+        <div className="font-silkscreen">
           <p> testing fonts! </p>
 
           <p> tomorrow. What a wonderful day!</p>
@@ -12,6 +14,8 @@ export default function TestDirection() {
           <p> give yourself a rest. we will fight stronger tomorrow </p>
 
           <p> I'm fabulous! fabulous, i say!</p>
+        </div>
+          
        
       </main>
     </div>
