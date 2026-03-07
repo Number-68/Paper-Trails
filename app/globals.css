@@ -99,7 +99,7 @@ p {
   
   scrollbar-width: none;
 
-  
+
 
   background-image:
     radial-gradient(#ffffff24 2px, transparent 2px);
@@ -109,7 +109,8 @@ p {
 
   /* illusion shadow! inner-frame is not behind the paper frame!!!! */
   box-shadow:
-    inset 0 8px 12px rgba(0, 0, 0, 0.25);
+    inset 0 8px 12px rgba(0, 0, 0, 0.353);
+
 
   /* sticker like look? */
   /*border: 2px solid #f3d6d6;
@@ -144,7 +145,33 @@ p {
   border-radius: 20px;
 }
 
+/* todo: the colors are a bit too gradient. is it possible to do toon shading? cell shading? */
 
+.tab-design{
+  background-image:
+    linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.1) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.1) 75%);
+  background-size: 20px 20px;
+  background-color: #c7ae8e;
+
+}
+
+.stitch-layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 95%;
+  border-left: 1px dashed #fff;
+  border-right: 1px dashed #fff;
+  border-bottom: 1px dashed #fff;
+  border-top: none;
+  /*outline: 2px solid #000; */
+  border-radius: 0 0 12px 12px;
+  font-family: "Caveat Brush";
+}
 
 .quick-about-me-main {
   display: grid;

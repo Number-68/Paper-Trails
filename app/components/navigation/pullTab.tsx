@@ -48,14 +48,13 @@ export default function PullTab ( {label, route, threshold = 400}: PullTabProps)
     return (
         
         <animated.div 
-            className="paper-outline"
+            className="tab-design"
             {...bind()}
             style={{
                 transform: y.to((v) => `translateY(${v}px)`),
                 touchAction: "none",
                 width: 120,
                 height: 40,
-                background: "papayawhip",
                 borderRadius: "0 0 12px 12px",
                 display: "flex",
                 alignItems: "center",
@@ -65,7 +64,11 @@ export default function PullTab ( {label, route, threshold = 400}: PullTabProps)
                 userSelect: "none",
             }}
         >
-        {label}
+
+          <div className="stitch-layer">
+            {label}
+          </div>
+        
         </animated.div>
     )
 }
