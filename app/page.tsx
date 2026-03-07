@@ -9,6 +9,17 @@ export default function Home() {
 
 
 
+
+  //todo: cool little stat line. like take it from github or something like that... "commits done"
+  // "years coding/developping"
+  // "etc etc"
+
+
+  // also, how do peopel make those animations of like... the words being written out? that's really cool.
+
+
+  // intro animation: everything drops down like a paper theatre.
+
   // todo: the introduction. 
   // like a little cutscene? 
   // starts with introduction, then it goes on like each little thing fades in and out...
