@@ -3,13 +3,17 @@
 import { useSpring, animated } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import { useRouter } from "next/navigation";
-
+import type { SpringValue, SpringRef } from "@react-spring/web"; 
 
 type PullTabProps = {
     label: string;
     route: string;
     threshold?: number;
     color: string;
+
+    
+    y: SpringValue<number>;
+    api: SpringRef<{ y: number }>;
 };
 
 // todo: threshold is currently fixed. I want to make it dynamic to at least like... 30% of the page for different resolution sizes.
@@ -17,11 +21,11 @@ type PullTabProps = {
 // but then again, find other possibilities. ez pz
 
 
-export default function PullTab ( {label, route, threshold = 400, color}: PullTabProps) {
+export default function PullTab ( {label, route, threshold = 400, color, y, api}: PullTabProps) {
     const router = useRouter();
 
     //spring value for vertical movement
-    const [{ y }, api] = useSpring(() => ({ y: 0}));
+    // const [{ y }, api] = useSpring(() => ({ y: 0}));
 
     
   //drag gesture logic
@@ -54,7 +58,7 @@ export default function PullTab ( {label, route, threshold = 400, color}: PullTa
             {...bind()}
             style={{
                 
-                transform: y.to((v) => `translateY(${v}px)`),
+                transform: y.to(v => `translateY(${v + window.innerHeight}px)`),
                 touchAction: "none",
                 width: 120,
                 height: 60,

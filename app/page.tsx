@@ -13,6 +13,7 @@ export default function Home() {
   //todo: cool little stat line. like take it from github or something like that... "commits done"
   // "years coding/developping"
   // "etc etc"
+  // "website views" would be pretting interesting too...
 
 
   // also, how do peopel make those animations of like... the words being written out? that's really cool.
@@ -30,6 +31,16 @@ export default function Home() {
   // you can navigate my work
   // after that introduction is done, we present it all together on a single page. 
   // and then
+
+
+
+
+
+  // it's all about the introduction! how do you make an introduction? a slam!
+  // the introduction animation is just opening on a blank screen, and then the paper cutouts slamming down with force! 
+  // bang!
+  // this way, I also wanna try building like physics for the pull tabs too... how could we add something like that? 
+
   return (
     <main className="quick-about-me-main">
       <section className="quick-about-me">
