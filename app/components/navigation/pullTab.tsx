@@ -64,8 +64,7 @@ export default function PullTab ( {label, route, threshold = 400, color, paperAp
       style={{
         
         top: 0,
-        left: "50%",
-        transform: y.to(v => `translate(-50%, ${v}px)`),
+        transform: y.to(v => `translate(0%, ${v}px)`),
         touchAction: "none",
         width: 120,
         height: 60,

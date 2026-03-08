@@ -138,8 +138,6 @@ p {
   justify-content: center;
   gap: 10px;
 
-
-
 }
 
 
@@ -188,4 +186,14 @@ p {
   padding: 10% 10% 10% 10%;
 
 }
+
+
+
+
+.loading-paper{
+  background-color: #c21818;
+}
+
+
+
 

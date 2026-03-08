@@ -19,6 +19,9 @@ export default function LoadingPaper({ y, color}: LoadingPaperProps) {
     // to get. 
     return (
         <animated.div
+
+        className="loading-paper"
+
         style={{
         transform: y.to(v => `translateY(${v}px)`),
         position: "fixed",
