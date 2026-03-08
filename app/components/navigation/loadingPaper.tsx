@@ -22,12 +22,13 @@ export default function LoadingPaper({ y, color}: LoadingPaperProps) {
         style={{
         transform: y.to(v => `translateY(${v}px)`),
         position: "fixed",
-        top: 0,
+        top: "-100vh",
         left: 0,
         width: "100vw",
-        height: "100vh",
+        height: "200vh",
         zIndex: 900,
         pointerEvents: "none",
+        background: color,
       }}
     />
     )
