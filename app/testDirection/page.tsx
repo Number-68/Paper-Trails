@@ -1,6 +1,5 @@
 export default function TestDirection() {
   return (
-    <div>
       <main>
         <p>routing works!</p>
 
@@ -15,8 +14,11 @@ export default function TestDirection() {
 
           <p> I&rsquo;m fabulous! fabulous, i say!</p>
         </div>
+
+        <div className="loading-spinner">
+          <p>Ryan</p>
+        </div>
           
       </main>
-    </div>
   );
 }

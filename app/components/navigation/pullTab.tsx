@@ -21,7 +21,7 @@ type PullTabProps = {
 // but then again, find other possibilities. ez pz
 
 
-export default function PullTab ( {label, route, threshold = 300, color, paperApi, viewportHeight}: PullTabProps) {
+export default function PullTab ( {label, route, threshold = 200, color, paperApi, viewportHeight}: PullTabProps) {
     const router = useRouter();
     const pathname = usePathname();
 
@@ -41,15 +41,6 @@ export default function PullTab ( {label, route, threshold = 300, color, paperAp
 
       
     }
-
-
-    // todo: add some sort of loading screen? or something to show that loading is being done. looks flat right now.
-    // Snap back if not enough pull
-    // how it sohuld work? 
-    // cover entire screen > wait for complete loading > animation pull back up.
-    
-    
-    
 
     if (route === pathname) {
       // same page navigation
@@ -94,6 +85,7 @@ export default function PullTab ( {label, route, threshold = 300, color, paperAp
         justifyContent: "center",
         cursor: "grab",
         userSelect: "none",
+        background: color,
       }}
     >
       <div className="stitch-layer">

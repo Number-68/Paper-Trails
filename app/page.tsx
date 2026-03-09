@@ -47,6 +47,9 @@ export default function Home() {
   //i mean for the text obviously... the text can be separate from the entire page to give it a look. y'knoww?
   return (
     <main className="quick-about-me-main">
+      <section>
+        <p>pull a tab to explore!</p>
+      </section>
       <section className="quick-about-me">
         
         <h1 className="text-shadow">
@@ -56,12 +59,8 @@ export default function Home() {
           Full-Stack Developer excited to learn about full stack frameworks etc.
         </p>
       </section>
+      
     </main>
     
   );
 }
-
-
-// two things on the todo right now before we finalize the first edition: 
-// create introduction. 
-// and the animation for changing pages. 
