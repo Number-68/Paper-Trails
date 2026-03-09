@@ -92,6 +92,7 @@ p {
   
 
 .inner-frame {
+
   border-radius: 40px;
   
   padding: 10px;
@@ -141,6 +142,10 @@ p {
 }
 
 
+.always-on-top{
+  z-index: 4000;
+}
+
 .paper-outline {
   border: 1px solid #000000;
   outline: 2px solid #ffffff;
@@ -155,8 +160,9 @@ p {
     linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.1) 75%),
     linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.1) 75%);
   background-size: 20px 20px;
-  background-color: #c7ae8e;
+  /* background-color: #c7ae8e; */
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.353);
+  
 
 }
 
@@ -202,7 +208,8 @@ p {
     linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.1) 75%);
   background-size: 50px 50px;
 
-  /* background-color: #c7ae8e; */
+  background-color: #c7ae8e;
+
 }
 
 
@@ -247,3 +254,21 @@ p {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
+
+
+
+.playful-words{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(100px, 50px) rotate(-5deg);
+
+}
+/* unknown--most likely 
+ordering error. 
+playful words is clipping over the nav tabs when they drag down.
+too tired to figure it out. 
+it's 1:53 am. 
+I'm going to add the arrow, and then put an end there.
+*/

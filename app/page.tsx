@@ -47,9 +47,11 @@ export default function Home() {
   //i mean for the text obviously... the text can be separate from the entire page to give it a look. y'knoww?
   return (
     <main className="quick-about-me-main">
-      <section>
-        <p>pull a tab to explore!</p>
+      <section className="playful-words">
+        
+        <p className="font-covered">pull a tab to explore yeah!!</p>
       </section>
+
       <section className="quick-about-me">
         
         <h1 className="text-shadow">

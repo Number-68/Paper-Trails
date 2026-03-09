@@ -68,7 +68,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={tomorrow.className}>
       <body className="no-scroll-body">
-        <PullNav />
+        <div className="always-on-top">
+          
+          <PullNav />
+        </div>
+        
         
         <div className="paper-frame">
           <div className="inner-frame">
