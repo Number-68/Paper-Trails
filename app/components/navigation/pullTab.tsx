@@ -35,7 +35,7 @@ export default function PullTab ( {label, route, threshold = 400, color, paperAp
     if (down) {
       //dollow the cursorexactly while dragging
       api.start({ y: pull, immediate: true });
-      paperApi.start({ y: pull - viewportHeight, immediate: true });
+      paperApi.start({ y: pull - viewportHeight });
       return;
 
       
