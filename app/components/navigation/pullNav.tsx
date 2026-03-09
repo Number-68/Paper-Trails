@@ -17,9 +17,9 @@ export default function PullNav() {
     const [{ y: paperY }, paperApi] = useSpring(() => ({
         y: 0,
         config: {
-            tension: 250,
+            tension: 300,
             friction: 20,
-            mass: 0.25,
+            mass: 1.25,
         }
     }));
 
@@ -46,6 +46,7 @@ export default function PullNav() {
         <>
 
             <LoadingPaper y={paperY} color="#c7ae8e" />
+            
             <nav className="paper-nav">
                 <PullTab label="Home" route="/" color="#c7ae8e" paperApi={paperApi} viewportHeight={viewportHeight} />
                 <PullTab label="Test" route="/testDirection" color="#c7ae8e" paperApi={paperApi} viewportHeight={viewportHeight} />
