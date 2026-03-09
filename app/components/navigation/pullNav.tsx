@@ -5,10 +5,12 @@ import LoadingPaper from "./loadingPaper";
 
 import { useSpring } from "@react-spring/web";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 
 export default function PullNav() {
     const [viewportHeight, setViewportHeight] = useState(0);
+    const pathname = usePathname();
 
     useEffect(() => {
         setViewportHeight(window.innerHeight);
@@ -28,7 +30,8 @@ export default function PullNav() {
     if (viewportHeight > 0) {
       paperApi.start({ y: -viewportHeight });
     }
-  }, [viewportHeight]);
+  }, [pathname, viewportHeight]);
+
 
 
   

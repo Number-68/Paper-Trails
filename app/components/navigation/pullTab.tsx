@@ -2,8 +2,8 @@
 
 import { animated, useSpring } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
-import { useRouter } from "next/navigation";
-import type { SpringValue, SpringRef } from "@react-spring/web"; 
+import { useRouter, usePathname } from "next/navigation";
+import type { SpringRef } from "@react-spring/web"; 
 
 type PullTabProps = {
   
@@ -23,6 +23,7 @@ type PullTabProps = {
 
 export default function PullTab ( {label, route, threshold = 400, color, paperApi, viewportHeight}: PullTabProps) {
     const router = useRouter();
+    const pathname = usePathname();
 
     //spring value for vertical movement
     const [{ y }, api] = useSpring(() => ({ y: 0}));
@@ -41,20 +42,38 @@ export default function PullTab ( {label, route, threshold = 400, color, paperAp
       
     }
 
-    // On release: check threshold
-    if (pull > threshold) {
-      router.push(route);
-      paperApi.start({ y: -viewportHeight });
-      api.start({ y: 0 });
-      return;
-    }
 
     // todo: add some sort of loading screen? or something to show that loading is being done. looks flat right now.
     // Snap back if not enough pull
     // how it sohuld work? 
     // cover entire screen > wait for complete loading > animation pull back up.
-    api.start({ y: 0 });
-    paperApi.start({ y: -viewportHeight });
+    
+    
+    
+
+    if (route === pathname) {
+      // same page navigation
+      paperApi.start({ y: -viewportHeight });
+      api.start({ y: 0 });
+      return;
+    }
+    
+    if (pull > threshold) {
+      paperApi.start({
+        y: 0,
+        onRest: () => {
+          router.push(route);
+          api.start({ y: 0 });
+        }
+      });
+    } else {
+      paperApi.start({ y: -viewportHeight });
+      api.start({ y: 0 });
+    }
+
+    
+    // api.start({ y: 0 });
+    // paperApi.start({ y: -viewportHeight });
 
   });
 
