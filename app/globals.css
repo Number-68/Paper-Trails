@@ -264,8 +264,8 @@ p {
 
 
   top: 0;
-  left: 30vw;
-  transform: translate(0px, 0px) rotate(15deg);
+  left: 0;
+  transform: translate(100px, 50px) rotate(15deg);
 
 }
 /* unknown--most likely 
