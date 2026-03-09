@@ -17,9 +17,9 @@ export default function PullNav() {
     const [{ y: paperY }, paperApi] = useSpring(() => ({
         y: 0,
         config: {
-            tension: 200,
+            tension: 250,
             friction: 20,
-            mass: 0.2,
+            mass: 0.25,
         }
     }));
 

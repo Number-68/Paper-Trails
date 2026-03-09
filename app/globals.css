@@ -164,7 +164,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  height: 97%;
+
   width: 95%;
   border-left: 1px dashed #fff;
   border-right: 1px dashed #fff;
@@ -215,3 +216,11 @@ p {
 
 }
 
+
+
+
+.tab-text-container{
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+}

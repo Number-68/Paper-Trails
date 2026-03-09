@@ -65,10 +65,10 @@ export default function PullTab ( {label, route, threshold = 400, color, paperAp
       style={{
         
         top: 0,
-        transform: y.to(v => `translate(0%, ${v}px)`),
+        transform: y.to(v => `translateY(${v - 240}px)`),
         touchAction: "none",
         width: 120,
-        height: 60,
+        height: 300,// 60 pixels always visible
         borderRadius: "0 0 12px 12px",
         display: "flex",
         alignItems: "center",
@@ -77,7 +77,13 @@ export default function PullTab ( {label, route, threshold = 400, color, paperAp
         userSelect: "none",
       }}
     >
-      <div className="stitch-layer">{label}</div>
+      <div className="stitch-layer">
+        <div className="tab-text-container">
+          {label}
+
+        </div>
+        
+      </div>
     </animated.div>
 
       
