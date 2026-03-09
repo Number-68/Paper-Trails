@@ -38,6 +38,7 @@ export default function PullTab ( {label, route, threshold = 400, color, paperAp
       paperApi.start({ y: pull - viewportHeight, immediate: true });
       return;
 
+      
     }
 
     // On release: check threshold
