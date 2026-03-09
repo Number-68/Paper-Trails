@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #c21818;
+    --background: #f79f9f;
     --foreground: #ededed;
   }
 }
@@ -64,7 +64,8 @@ h1 {
 p {
   font-family: "Caveat Brush";
   
-  
+  font-weight: 700;
+
 }
 
 
@@ -184,6 +185,7 @@ p {
 
 .quick-about-me{
   padding: 10% 10% 10% 10%;
+  
 
 }
 
@@ -191,9 +193,26 @@ p {
 
 
 .loading-paper{
-  background-color: #c21818;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.353);
+
+  background-image:
+    linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.1) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.1) 75%);
+  background-size: 50px 50px;
+
+  background-color: #c7ae8e;
 }
 
 
 
+
+.text-shadow{
+  text-shadow:
+    0 10px 4px #0000003a,
+    0 15px 12px rgba(0,0,0,0.25);
+
+
+}
 

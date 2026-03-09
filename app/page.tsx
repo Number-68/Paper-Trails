@@ -41,18 +41,27 @@ export default function Home() {
   // bang!
   // this way, I also wanna try building like physics for the pull tabs too... how could we add something like that? 
 
+
+
+  // todo: wobble animations? like when we're moving the page, shouldn't we have a little bit of give to make it look a lot more dynamic? 
+  //i mean for the text obviously... the text can be separate from the entire page to give it a look. y'knoww?
   return (
     <main className="quick-about-me-main">
       <section className="quick-about-me">
         
-        <h1>
+        <h1 className="text-shadow">
           Ahleeryan-Joe Ventura
         </h1>
-        <p> 
+        <p className="text-shadow"> 
           Full-Stack Developer excited to learn about full stack frameworks etc.
         </p>
       </section>
-        
     </main>
+    
   );
 }
+
+
+// two things on the todo right now before we finalize the first edition: 
+// create introduction. 
+// and the animation for changing pages. 
