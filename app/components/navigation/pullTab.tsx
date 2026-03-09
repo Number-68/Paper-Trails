@@ -21,7 +21,7 @@ type PullTabProps = {
 // but then again, find other possibilities. ez pz
 
 
-export default function PullTab ( {label, route, threshold = 400, color, paperApi, viewportHeight}: PullTabProps) {
+export default function PullTab ( {label, route, threshold = 300, color, paperApi, viewportHeight}: PullTabProps) {
     const router = useRouter();
     const pathname = usePathname();
 
@@ -72,8 +72,8 @@ export default function PullTab ( {label, route, threshold = 400, color, paperAp
     }
 
     
-    // api.start({ y: 0 });
-    // paperApi.start({ y: -viewportHeight });
+  // api.start({ y: 0 });
+  // paperApi.start({ y: -viewportHeight });
 
   });
 

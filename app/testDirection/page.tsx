@@ -13,10 +13,9 @@ export default function TestDirection() {
 
           <p> give yourself a rest. we will fight stronger tomorrow </p>
 
-          <p> I'm fabulous! fabulous, i say!</p>
+          <p> I&rsquo;m fabulous! fabulous, i say!</p>
         </div>
           
-       
       </main>
     </div>
   );
