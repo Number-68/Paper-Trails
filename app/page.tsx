@@ -1,4 +1,7 @@
 
+import HandDrawnArrow from "./components/handDrawnArrow";
+
+
 
 export default function Home() {
 
@@ -45,11 +48,22 @@ export default function Home() {
 
   // todo: wobble animations? like when we're moving the page, shouldn't we have a little bit of give to make it look a lot more dynamic? 
   //i mean for the text obviously... the text can be separate from the entire page to give it a look. y'knoww?
+
+
+
+
+  //cool game to add. 
+  //like playing in the sand of letters. what if we just made everything on the screen, you're able to interact with. 
+  //so like... the arrow, you can drag, 
+  // each and every single letter, you can drag around and like it has a physics engine.... and you can play around with it. 
+  // fun stuff, but would probably get super heavy to handle on regular machines.
   return (
     <main className="quick-about-me-main">
-      <section className="playful-words">
+      <section className="playful-words text-shadow">
         
-        <p className="font-covered">pull a tab to explore yeah!!</p>
+        <HandDrawnArrow />
+
+        <p className="font-covered">pull a tab to explore!</p>
       </section>
 
       <section className="quick-about-me">

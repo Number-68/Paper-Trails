@@ -65,6 +65,7 @@ p {
   font-family: "Caveat Brush";
   
   font-weight: 700;
+  font-size: 1.5em;
 
 }
 
@@ -260,9 +261,11 @@ p {
 
 .playful-words{
   position: absolute;
+
+
   top: 0;
-  left: 0;
-  transform: translate(100px, 50px) rotate(-5deg);
+  left: 30vw;
+  transform: translate(0px, 0px) rotate(15deg);
 
 }
 /* unknown--most likely 
@@ -272,3 +275,15 @@ too tired to figure it out.
 it's 1:53 am. 
 I'm going to add the arrow, and then put an end there.
 */
+
+
+
+
+
+
+
+.svg-shadow {
+  filter:
+    drop-shadow(4px 10px 4px #0000003a)
+    drop-shadow(4px 15px 12px rgba(0,0,0,0.25));
+}
