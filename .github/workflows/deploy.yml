@@ -2,7 +2,7 @@ name: Deploy Next.js site to Pages
 
 on:
   push:
-    branches: ["pages-config"]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -20,34 +20,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
+          
       - name: Install dependencies
         run: npm ci
-      - name: Build with Next.js
-        run: npx next build
-
-      - name: Check for out folder
-        run: |
-          if [ -d "out" ]; then
-            echo "✅ out folder exists"
-            ls -la out/
-          else
-            echo "❌ out folder missing – contents of current directory:"
-            ls -la
-          fi
-
-      - name: Show next.config.ts
-        run: cat next.config.ts
-
-      - name: List files after build
-        run: ls -la
+        
+      - name: Build
+        run: npm run build
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

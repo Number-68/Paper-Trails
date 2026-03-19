@@ -1,9 +1,12 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+ 
   output: 'export',
-  basePath: '/Paper-Trails',  
-  distDir: 'out',         
+  
+
+  basePath: '/Paper-Trails',
+  
+  
   images: {
     unoptimized: true,
   },
