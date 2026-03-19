@@ -33,9 +33,19 @@ jobs:
       - name: Build with Next.js
         run: npx next build
 
+      - name: Check for out folder
+        run: |
+          if [ -d "out" ]; then
+            echo "✅ out folder exists"
+            ls -la out/
+          else
+            echo "❌ out folder missing – contents of current directory:"
+            ls -la
+          fi
+
       - name: Show next.config.ts
         run: cat next.config.ts
-        
+
       - name: List files after build
         run: ls -la
       - name: Upload artifact
