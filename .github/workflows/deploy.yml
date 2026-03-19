@@ -32,6 +32,12 @@ jobs:
         run: npm ci
       - name: Build with Next.js
         run: npx next build
+
+      - name: Show next.config.ts
+        run: cat next.config.ts
+        
+      - name: List files after build
+        run: ls -la
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
