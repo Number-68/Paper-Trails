@@ -2,6 +2,8 @@ export default function TestDirection() {
   return (
       <main>
         <p>routing works!</p>
+        <p> mock portfolio page. </p>
+        <p> nothing to see here</p>
 
         <br />
 
