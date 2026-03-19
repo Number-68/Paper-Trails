@@ -1,18 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  output: 'export', // Enables static exports
-  basePath: '/Paper-Trails',
+  output: 'export',
+  basePath: '/Paper-Trails',   // double-check this matches your repo name
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
   reactCompiler: true,
 };
-
-
-
-module.exports = nextConfig;
-
 
 export default nextConfig;
