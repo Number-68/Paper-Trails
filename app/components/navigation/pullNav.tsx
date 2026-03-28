@@ -64,8 +64,7 @@ export default function PullNav() {
             
             <nav className="paper-nav">
                 <PullTab label="Home" route="/" color="#c7ae8e" paperApi={paperApi} viewportHeight={viewportHeight} />
-                <PullTab label="Test" route="/testDirection" color="#7cbda4" paperApi={paperApi} viewportHeight={viewportHeight} />
-                <PullTab label="Alvin" route="/testDirection" color="#dc6c6c" paperApi={paperApi} viewportHeight={viewportHeight} />
+                <PullTab label="Projects" route="/projects" color="#7cbda4" paperApi={paperApi} viewportHeight={viewportHeight} />
 
             </nav>
 
