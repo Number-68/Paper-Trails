@@ -96,15 +96,13 @@ p {
 
   border-radius: 40px;
   
-  padding: 10px;
+  
 
   height: 100%;
   background: #c7ae8e;
-  overflow-y: auto;
+  overflow-y: none;
   
-  scrollbar-width: none;
-
-
+  
 
   background-image:
     radial-gradient(#ffffff24 2px, transparent 2px);
@@ -126,6 +124,23 @@ p {
 
   border-radius: 20px;
   
+  padding-top: 4px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 4px;
+  
+}
+
+.inner-frame-content{
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* background-color: #f79f9f; */
+
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  
 
   
 }
@@ -141,6 +156,8 @@ p {
   justify-content: center;
   gap: 10px;
   pointer-events: none;
+
+
 }
 
 
@@ -167,6 +184,7 @@ p {
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.353);
   
 
+  
 }
 
 .stitch-layer {
@@ -306,9 +324,38 @@ a {
   justify-content: center;
 }
 
-  .card-container div {
+  .card-container .sticky-note {
     background-color: #f79f9f;
-    max-width: 40%;
+    width: 40%;
     margin: 30px;
-    padding: 40px; 
+
+    /* border-radius: 0 20px 0 20px; */
+    clip-path: polygon(
+    0 0,
+    calc(100% - 20px) 0,
+    100% 20px,
+    100% 100%,
+    0 100%
+  );
+    
   }
+    .card-container a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 40px; 
+      text-decoration: none;
+      color: inherit;
+    }
+    .card-container a div{
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+
+
+  /* todo: now we must style it a bit better.
+  give this thing a bit mroe styles that :matches
+  we show like... bordres
+  curves aroudn the borders. 
+  etc. */

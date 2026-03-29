@@ -76,7 +76,11 @@ export default function RootLayout({
         
         <div className="paper-frame">
           <div className="inner-frame">
-            {children}
+            <div className="inner-frame-content">
+              {children}
+              
+            </div>
+            
           </div>
         </div>
       </body>
