@@ -9,3 +9,15 @@ const nextConfig: NextConfig = {
 
 
 export default nextConfig;
+
+
+
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   output: 'export',
+//   images: { unoptimized: true },
+//   basePath: '/Paper-Trails',
+//   assetPrefix: '/Paper-Trails/',
+// };
+
+// module.exports = nextConfig;
