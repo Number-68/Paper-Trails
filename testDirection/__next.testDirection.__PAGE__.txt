@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/Paper-Trails/_next/static/chunks/2f236954d6a65e12.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"buildId":"tcMPw7uOcUKy0TxzEIowp","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","p",null,{"children":"routing works!"}],["$","br",null,{}],["$","div",null,{"className":"font-silkscreen","children":[["$","p",null,{"children":" testing fonts! "}],["$","p",null,{"children":" tomorrow. What a wonderful day!"}],["$","p",null,{"children":" give yourself a rest. we will fight stronger tomorrow "}],["$","p",null,{"children":" I’m fabulous! fabulous, i say!"}]]}],["$","div",null,{"className":"loading-spinner","children":["$","p",null,{"children":"Ryan"}]}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+4:null
