@@ -157,12 +157,11 @@ p {
   gap: 10px;
   pointer-events: none;
 
-
 }
 
 
 .always-on-top{
-  z-index: 4000;
+  z-index: 9999;
 }
 
 .paper-outline {
@@ -308,7 +307,11 @@ I'm going to add the arrow, and then put an end there.
     drop-shadow(4px 15px 12px rgba(0,0,0,0.25));
 }
 
-
+main {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 
 a {
@@ -322,35 +325,58 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  
 }
 
   .card-container .sticky-note {
-    background-color: #f79f9f;
+    
     width: 40%;
     margin: 30px;
-
-    /* border-radius: 0 20px 0 20px; */
-    clip-path: polygon(
-    0 0,
-    calc(100% - 20px) 0,
-    100% 20px,
-    100% 100%,
-    0 100%
-  );
     
+
+    border-radius: 0 40px 0 20px;
+    /* clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 20px),
+      calc(100% - 20px) 100%,
+      0 100%
+    );
+
+    z-index: auto; */
+
+
+
+    background-color: #ECDBC4;
+    background-image: 
+      radial-gradient(rgba(0, 0, 0, 0.147) 1px, transparent 1px);
+    background-size: 5px 5px;
+
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.353);
+    transition: transform 0.2s ease;
   }
+
+
+    .card-container .sticky-note:hover {
+      z-index: 1;
+      transform: scale(1.03) rotate(2deg);
+    }
+
+
+
     .card-container a {
       display: block;
       width: 100%;
       height: 100%;
       padding: 40px; 
-      text-decoration: none;
-      color: inherit;
+      
     }
     .card-container a div{
       width: 100%;
       height: 100%;
       margin: 0px;
+      color: black;
     }
 
 

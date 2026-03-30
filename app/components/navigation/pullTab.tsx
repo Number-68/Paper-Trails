@@ -4,6 +4,7 @@ import { animated, useSpring } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import { useRouter, usePathname } from "next/navigation";
 import type { SpringRef } from "@react-spring/web"; 
+import Link from "next/link";
 
 type PullTabProps = {
   
@@ -90,8 +91,9 @@ export default function PullTab ( {label, route, threshold = 200, color, paperAp
     >
       <div className="stitch-layer">
         <div className="tab-text-container">
+          
           {label}
-
+          
         </div>
         
       </div>

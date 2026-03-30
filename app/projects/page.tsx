@@ -57,10 +57,12 @@ export default async function Projects() {
         <div className="card-container">
             {validRepos.map((repo) => (
 
-            <div key={repo.id} className="sticky-note">
+            <div key={repo.id} className="sticky-note paper-outline">
                 <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
                   <div>
-                     <strong>{repo.name}</strong>
+                    <h1>
+                      <strong>{repo.name}</strong>
+                    </h1>
                 
                     <p>{repo.description || "No description provided."}</p>
                     <p>⭐ {repo.stargazers_count} | 🍴 {repo.forks_count}</p>

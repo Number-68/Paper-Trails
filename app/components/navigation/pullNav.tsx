@@ -53,7 +53,6 @@ export default function PullNav() {
 
 
 
-
     // todo: make logic to make sure tabs aren't selectable when you're on its page. 
     // either we can make it disappear or we can make it just like... grayed out or something like that.
 
@@ -65,7 +64,6 @@ export default function PullNav() {
             <nav className="paper-nav">
                 <PullTab label="Home" route="/" color="#c7ae8e" paperApi={paperApi} viewportHeight={viewportHeight} />
                 <PullTab label="Projects" route="/projects" color="#7cbda4" paperApi={paperApi} viewportHeight={viewportHeight} />
-
             </nav>
 
             
