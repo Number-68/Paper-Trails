@@ -57,8 +57,8 @@ else{
 
 
 // ESLint 
-console.log("running ESLint");
-run("npx eslint .");
+// console.log("running ESLint");
+// run("npx eslint .");
 
 
 // fine.
