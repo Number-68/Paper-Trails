@@ -23,7 +23,7 @@ function run(cmd) {
 
 
 console.log("Type Checking!");
-run("tsc --noEmit");
+run("npx tsc --noEmit");
 
 
 
